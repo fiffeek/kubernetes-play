@@ -1,6 +1,0 @@
-templates:
-  default: &default
-    missingFileHandler: Warn
-    values:
-      - config/{{`{{ .Release.Name }}`}}/values.yaml
-      - config/{{`{{ .Release.Name }}`}}/{{`{{ .Environment.Name }}`}}.yaml
