@@ -1,0 +1,13 @@
+bases:
+  - ../environments.yaml
+  - ../repositories.yaml
+  - ../templates.yaml
+
+{{ readFile "../templates.yaml" }}
+
+releases:
+  - name: docker-registry
+    namespace: default
+    chart: twuni/docker-registry
+    version: 2.1.0
+    <<: *default
