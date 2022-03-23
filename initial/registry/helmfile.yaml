@@ -1,6 +1,6 @@
 bases:
-  - ../environments.yaml
-  - ../repositories.yaml
+  - ../../common/helm/environments.yaml
+  - ../../common/helm/repositories.yaml
 
 templates:
   default: &default
